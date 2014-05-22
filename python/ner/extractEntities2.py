@@ -235,6 +235,7 @@ while line:
     nLines += 1
     
     line = sys.stdin.readline().strip()
+    line = unicode(line, 'utf-8')       #Decode line
     line = line.encode('utf-8')
 
 end_time = time.time()
